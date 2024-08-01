@@ -76,13 +76,12 @@ let currentIndex = 0;
 function showSlide(index) {
   const container = document.getElementById('slider-container');
   const totalSlides = projects.length;
-
   if (index >= totalSlides) {
-      currentIndex = 0;
+    currentIndex = 0;
   } else if (index < 0) {
-      currentIndex = totalSlides - 1;
+    currentIndex = totalSlides - 1;
   } else {
-      currentIndex = index;
+    currentIndex = index;
   }
 
   const cardWidth = container.querySelector('.card').offsetWidth;
@@ -98,13 +97,13 @@ function openPopup(index) {
   const popupContent = document.getElementById('popup-content-inner');
   const project = projects[index];
   popupContent.innerHTML = `
-      <h2>${project.title}</h2>
-      <p>${project.description}</p>
-      <div class="technologies">
-          ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
-      </div>
-      <a href="${project.liveLink}" target="_blank">Live Version</a>
-      <a href="${project.sourceLink}" target="_blank">Source Code</a>
+    <h2>${project.title}</h2>
+    <p>${project.description}</p>
+    <div class="technologies">
+      ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
+    </div>
+    <a href="${project.liveLink}" target="_blank">Live Version</a>
+    <a href="${project.sourceLink}" target="_blank">Source Code</a>
   `;
   popup.style.display = 'flex';
 }
@@ -117,17 +116,6 @@ document.getElementById('close-btn').addEventListener('click', () => {
 // Initialize cards
 createCards();
 showSlide(currentIndex);
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contactForm');
@@ -153,52 +141,28 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      errorMessage.style.display = 'none';
+    event.preventDefault();
+    errorMessage.style.display = 'none';
 
-      const name = nameField.value.trim();
-      const email = emailField.value.trim().toLowerCase();
-      const subject = subjectField.value.trim();
-      const message = messageField.value.trim();
+    const name = nameField.value.trim();
+    const email = emailField.value.trim().toLowerCase();
+    const subject = subjectField.value.trim();
+    const message = messageField.value.trim();
 
-      if (!name || !email || !subject || !message) {
-          errorMessage.textContent = 'All fields are required.';
-          errorMessage.style.display = 'block';
-          return;
-      }
+    if (!name || !email || !subject || !message) {
+      errorMessage.textContent = 'All fields are required.';
+      errorMessage.style.display = 'block';
+      return;
+    }
 
-      // Validate email
-      const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    // Validate email
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
       if (!emailPattern.test(email)) {
-          errorMessage.textContent = 'Please enter a valid email address.';
-          errorMessage.style.display = 'block';
-          return;
+        errorMessage.textContent = 'Please enter a valid email address.';
+        errorMessage.style.display = 'block';
+        return;
       }
-
       // If validation is OK, submit the form
-      form.submit();
+    form.submit();
   });
 });
-
-
-
-
-/*
-const nameError = document.getElementById("name-error");
-const emaiError = document.getElementById("email-error");
-const messageError = document.getElementById("message-error");
-
-function validateName() {
-  var name = document.getElementById("contact-name").value;
-
-  if(name.length == 0){
-    nameError.innerHTML = 'name is required';
-    return false
-  }
-  if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-    nameError.innerHTML = 'write full name';
-    return false
-  }
-  nameError.innerHTML = 'valid';
-  return true;
-}*/
