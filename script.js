@@ -2,52 +2,52 @@
 // Sample project data
 const projects = [
   {
-    title: "documentation page",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/documentation1.jpg", 
-    technologies: ["html", "css",],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'documentation page',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/documentation1.jpg',
+    technologies: ['html', 'css'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    title: "palindrome checker",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/screen.jpg",
-    technologies: ["html", "css", "javaScript"],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'palindrome checker',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/screen.jpg',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    title: "roman numeral converter",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/romann.jpg",
-    technologies: ["html", "css", "javaScript"],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'roman numeral converter',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/romann.jpg',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    title: "US number validator",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/shot.jpg",
-    technologies: ["html", "css", "javaScript"],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'US number validator',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/shot.jpg',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    title: "cash register",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/capture_240710_194736.png",
-    technologies: ["html", "css", "javaScript"],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'cash register',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/capture_240710_194736.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    title: "pokman project",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "assects/capture_240710_113937.png",
-    technologies: ["html", "css", "javaScript"],
-    liveLink: "#",
-    sourceLink: "#"
+    title: 'pokman project',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assects/capture_240710_113937.png',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
@@ -62,7 +62,7 @@ function createCards() {
       <h3>${project.title}</h3>
       <p>${project.description}</p>
       <div class="technologies">
-        ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
+        ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
       </div>
       <button onclick="openPopup(${index})">See Project</button>
     `;
@@ -100,7 +100,7 @@ function openPopup(index) {
     <h2>${project.title}</h2>
     <p>${project.description}</p>
     <div class="technologies">
-      ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
+      ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
     </div>
     <a href="${project.liveLink}" target="_blank">Live Version</a>
     <a href="${project.sourceLink}" target="_blank">Source Code</a>
@@ -117,7 +117,7 @@ document.getElementById('close-btn').addEventListener('click', () => {
 createCards();
 showSlide(currentIndex);
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const nameField = document.getElementById('name');
   const emailField = document.getElementById('email');
@@ -133,14 +133,14 @@ document.addEventListener('DOMContentLoaded', function() {
   if (formData.message) messageField.value = formData.message;
 
   // Save data to localStorage on input change
-  [nameField, emailField, subjectField, messageField].forEach(field => {
-      field.addEventListener('input', () => {
-          formData[field.id] = field.value;
-          localStorage.setItem('formData', JSON.stringify(formData));
-      });
+  [nameField, emailField, subjectField, messageField].forEach((field) => {
+    field.addEventListener('input', () => {
+      formData[field.id] = field.value;
+      localStorage.setItem('formData', JSON.stringify(formData));
+    });
   });
 
-  form.addEventListener('submit', function(event) {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     errorMessage.style.display = 'none';
 
@@ -157,12 +157,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Validate email
     const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-      if (!emailPattern.test(email)) {
-        errorMessage.textContent = 'Please enter a valid email address.';
-        errorMessage.style.display = 'block';
-        return;
-      }
-      // If validation is OK, submit the form
+    if (!emailPattern.test(email)) {
+      errorMessage.textContent = 'Please enter a valid email address.';
+      errorMessage.style.display = 'block';
+      return;
+    }
+    // If validation is OK, submit the form
     form.submit();
   });
 });
