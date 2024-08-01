@@ -1,14 +1,13 @@
 // script.js
-
 // Sample project data
 const projects = [
   {
-      title: "documentation page",
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      image: "assects/documentation1.jpg", 
-      technologies: ["html", "css",],
-      liveLink: "#",
-      sourceLink: "#"
+    title: "documentation page",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "assects/documentation1.jpg", 
+    technologies: ["html", "css",],
+    liveLink: "#",
+    sourceLink: "#"
   },
   {
     title: "palindrome checker",
@@ -17,39 +16,39 @@ const projects = [
     technologies: ["html", "css", "javaScript"],
     liveLink: "#",
     sourceLink: "#"
-},
-{
-  title: "roman numeral converter",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  image: "assects/romann.jpg",
-  technologies: ["html", "css", "javaScript"],
-  liveLink: "#",
-  sourceLink: "#"
-},
-{
-  title: "US number validator",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  image: "assects/shot.jpg",
-  technologies: ["html", "css", "javaScript"],
-  liveLink: "#",
-  sourceLink: "#"
-},
-{
-  title: "cash register",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  image: "assects/capture_240710_194736.png",
-  technologies: ["html", "css", "javaScript"],
-  liveLink: "#",
-  sourceLink: "#"
-},
-{
-  title: "pokman project",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  image: "assects/capture_240710_113937.png",
-  technologies: ["html", "css", "javaScript"],
-  liveLink: "#",
-  sourceLink: "#"
-},
+  },
+  {
+    title: "roman numeral converter",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "assects/romann.jpg",
+    technologies: ["html", "css", "javaScript"],
+    liveLink: "#",
+    sourceLink: "#"
+  },
+  {
+    title: "US number validator",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "assects/shot.jpg",
+    technologies: ["html", "css", "javaScript"],
+    liveLink: "#",
+    sourceLink: "#"
+  },
+  {
+    title: "cash register",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "assects/capture_240710_194736.png",
+    technologies: ["html", "css", "javaScript"],
+    liveLink: "#",
+    sourceLink: "#"
+  },
+  {
+    title: "pokman project",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    image: "assects/capture_240710_113937.png",
+    technologies: ["html", "css", "javaScript"],
+    liveLink: "#",
+    sourceLink: "#"
+  },
 ];
 
 // Function to create project cards
