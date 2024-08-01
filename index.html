@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <section class="Projects" id="Projects">
+      <div class="background-container">
+        <div class="background-image image1"></div>
+        <div class="background-image image2"></div>
+        <div class="background-image image3"></div>
+        <div class="background-image image4"></div>
+      </div>
+        <div class="slider">
+            <button class="slider-btn prev-btn">&lt;</button>
+            <div class="slider-container" id="slider-container">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+            <button class="slider-btn next-btn">&gt;</button>
+        </div>
+    
+        <!-- Popup Modal -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <div id="popup-content-inner"></div>
+            </div>
+        </div> 
+    </section>
+<section class="contact" id="contact">
+    <div class="container">
+      
+        <img src="./assects/working.png" alt="Working Image" class="top-left-image" />
+       
+   
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-content">
+                    <h2>Connect With Me</h2>
+                    <p>I’m very approachable and would love to speak to you. Feel free to call, send me an email. Follow me in social media or simply complete the enquiry form.</p>
+                    <div class="contact-details">
+                      <div class="contact-item">
+                          <i class="fas fa-phone"></i> <a href="https://wa.me/+93 730684891" target="_blank">+93 730684891</a>
+                      </div>
+                      <div class="contact-item">
+                          <i class="fas fa-envelope"></i> <a href="mailto:sodabarauf4@gmail.com">sodabarauf4@gmail.com</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="contact-form">
+              <h2>Send me a message</h2>
+              
+              <form id="contactForm" action="https://formspree.io/f/{form_id}" method="post">
+                  <input type="text" id="name" name="name" maxlength="30" placeholder="Name" required>
+                  <input type="email" id="email" name="email" placeholder="Email Address" required>
+                  <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                  <textarea id="message" name="message" maxlength="500" placeholder="Your message" required></textarea>
+                  <button type="submit">Send message</button>
+                  <p class="error-message" id="errorMessage"></p>
+              </form>
+          </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <h3>Built with ♥️ by Sodaba Rauf :)</h3>
+    <div id="me">
+      <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#">About</a>
+        <a href="#Projects"><i class="fa-solid fa-briefcase"></i>Projects</a>
+        <a href="#contact"><i class="fa-solid fa-user"></i>Contact</a>
+    </div>
+    <h2>Let's connect</h2>
+    <div id="connect">
+      <a href="mailto:sodabarauf4@gmail.com"><i class="fa-brands fa-google"></i></a>
+      <a href="https://github.com/sodabarauf"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sodaba-r-5a0733255/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
