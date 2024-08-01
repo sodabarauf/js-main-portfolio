@@ -55,18 +55,18 @@ const projects = [
 function createCards() {
   const container = document.getElementById('slider-container');
   projects.forEach((project, index) => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-          <img src="${project.image}" alt="${project.title}">
-          <h3>${project.title}</h3>
-          <p>${project.description}</p>
-          <div class="technologies">
-              ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
-          </div>
-          <button onclick="openPopup(${index})">See Project</button>
-      `;
-      container.appendChild(card);
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img src="${project.image}" alt="${project.title}">
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <div class="technologies">
+        ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
+      </div>
+      <button onclick="openPopup(${index})">See Project</button>
+    `;
+    container.appendChild(card);
   });
 }
 
