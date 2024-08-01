@@ -300,153 +300,145 @@ h2 {
   display: none;
 }
   
-  #connect {
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: 100px;
-  }
+#connect {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 100px;
+}
   
-  #connect a {
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    height: 50px;
-  }
-
+#connect a {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  height: 50px;
+}
 
 /* Desktop styles */
 @media (min-width: 768px) {
-    body {
-        margin-bottom: 100px;
-    }
+  body {
+    margin-bottom: 100px;
+  }
+
+  .card {
+    min-width: 45%;
+    max-width: 45%;
+  }
+  .popup-content {
+    max-width: 700px;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-info, .contact-form {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .contact {
+    position: relative; /* Make the contact div the reference point for the absolutely positioned image */
+    border: 1px transparent;
+    margin-top: 100px;
+    padding: 100px;
+  }
+
+  .top-left-image {
+    position: absolute; /* Position the image absolutely within the contact div */
+    top: -350.63px; /* Adjust this value to position the image outside the div */
+    left: 50px; /* Align the image to the left of the contact div */
+    width: 379px; /* Maintain the specified width */
+    height: 835.63px; /* Maintain the specified height */
+    margin-bottom: 500px;
+  }
+
+  footer {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
     
-    .card {
-        min-width: 45%;
-        max-width: 45%;
-    }
-
-   
-
-    .popup-content {
-        max-width: 700px;
-    }
-
-    .contact-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .contact-info, .contact-form {
-        width: 48%;
-        margin-bottom: 0;
-    }
-
-    .contact {
-        position: relative; /* Make the contact div the reference point for the absolutely positioned image */
-        border: 1px transparent;
-        margin-top: 100px;
-        padding: 100px;
-    }
-
-    .top-left-image {
-        position: absolute; /* Position the image absolutely within the contact div */
-        top: -350.63px; /* Adjust this value to position the image outside the div */
-        left: 50px; /* Align the image to the left of the contact div */
-        width: 379px; /* Maintain the specified width */
-        height: 835.63px; /* Maintain the specified height */
-        margin-bottom: 500px;
-    }
-
-    footer {
-        margin-bottom: 50px;
-        margin-left: 50px;
-    }
-    
-    #me {
-        width: 400.72px;
-        margin-right: 500px;
-        margin-left: 250px;
-      
-      }
-    
+  #me {
+    width: 400.72px;
+    margin-right: 500px;
+    margin-left: 250px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .card {
-        min-width: 30%;
-        max-width: 30%;
-    }
+  .card {
+    min-width: 30%;
+    max-width: 30%;
+  }
 
-    .popup-content {
-        max-width: 900px;
-    }
+  .popup-content {
+    max-width: 900px;
+  }
 
+  .Projects {
+    background: url(./assects/Background.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+  }
+ 
+  .background-image {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    width: 80%;
+    height: 100%;
+    background-size: 90%; /* Cover the whole div */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.54; /* Adjust opacity as needed */
+  }
+     
+  .image1 {
+    background-image: url('assects/Ellipse 1423.png');
+  }
+     
+  .image2 {
+    background-image: url('assects/Ellipse 1425.png');
+  }
+     
+  .image3 {
+    background-image: url('assects/Ellipse 1427.png');
+  }
+     
+  .image4 {
+    background-image: url('assects/Small Circle.png');
+  }
+ 
+  .slider-container {
+    width: 300%; /* Adjust for desktop view */
+  }
+ 
+  .card {
+    min-width: 33.33%; /* Show 3 cards at a time */
+  }
+ 
+  .popup-content {
+    width: 60%;
+  }
+ 
+  .prev-btn {
+    left: 10px;
+  }
+     
+  .next-btn {
+    right: 10px;
+  }
 
-    .Projects {
-        background: url(./assects/Background.png);
-        background-position: center;
-        background-size: cover;
-        padding-top: 80px;
-     
-     }
- 
-     .background-image {
-         position: absolute;
-         top: 40px;
-         left: 150px;
-         width: 80%;
-         height: 100%;
-         background-size: 90%; /* Cover the whole div */
-         background-repeat: no-repeat;
-         background-position: center;
-         opacity: 0.54; /* Adjust opacity as needed */
-     }
-     
-     .image1 {
-         background-image: url('assects/Ellipse 1423.png');
-     }
-     
-     .image2 {
-         background-image: url('assects/Ellipse 1425.png');
-     }
-     
-     .image3 {
-         background-image: url('assects/Ellipse 1427.png');
-     }
-     
-     .image4 {
-         background-image: url('assects/Small Circle.png');
-     }
- 
-     .slider-container {
-         width: 300%; /* Adjust for desktop view */
-     }
- 
-     .card {
-         min-width: 33.33%; /* Show 3 cards at a time */
-     }
- 
-     .popup-content {
-         width: 60%;
-     }
- 
-     .prev-btn {
-         left: 10px;
-     }
-     
-     .next-btn {
-         right: 10px;
-     }
+  .contact {
+    margin-top: 300px;
+  }
 
-     .contact {
-        margin-top: 300px;
-    }
-
-    #me {
-        border-radius: 10px;
-        width: 700.72px;
-        margin-left: 250px;
-      }
+  #me {
+    border-radius: 10px;
+    width: 700.72px;
+    margin-left: 250px;
+  }
 }
