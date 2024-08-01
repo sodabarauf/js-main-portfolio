@@ -108,6 +108,8 @@ function openPopup(index) {
   popup.style.display = 'flex';
 }
 
+document.getElementById('someButton').addEventListener('click', () => openPopup(0));
+
 // Function to close popup
 document.getElementById('close-btn').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'none';
