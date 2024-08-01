@@ -40,6 +40,15 @@ body {
   border-radius: 8px 8px 0 0;
 }
 
+h3 {
+  font-size: 20px;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .card h3 {
   font-size: 1.2em;
   margin: 10px 0;
@@ -73,6 +82,15 @@ body {
   border-radius: 5px;
   margin-top: 10px;
   transition: background-color 0.3s;
+}
+
+.contact-form button {
+  background: linear-gradient(45deg, #2957a3, #c961de);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button:hover {
@@ -142,6 +160,12 @@ body {
   margin: 10px 0;
   color: #007bff;
   text-decoration: none;
+}
+
+.contact-item a {
+  color: #fff; /* or any color that fits your design */
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .popup-content a:hover {
@@ -218,12 +242,6 @@ body {
   font-size: 20px;
 }
 
-.contact-item a {
-  color: #fff; /* or any color that fits your design */
-  text-decoration: none;
-  font-size: 18px;
-}
-
 .contact-item a:hover {
   text-decoration: underline;
 }
@@ -231,6 +249,15 @@ body {
 .contact-form {
   padding: 20px;
   width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .contact-form h2 {
@@ -249,15 +276,6 @@ body {
   color: #000;
 }
 
-.contact-form button {
-  background: linear-gradient(45deg, #2957a3, #c961de);
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .contact-form button:hover {
   background-color: #484891;
 }
@@ -271,16 +289,6 @@ footer {
   background-color: transparent;
 }
 
-h3,
-h2 {
-  font-size: 20px;
-  display: flex;
-  margin-left: 100px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-  
 #me {
   border: 1px solid transparent;
   margin-right: 100px;
@@ -317,6 +325,7 @@ h2 {
 }
 
 /* Desktop styles */
+
 @media (min-width: 768px) {
   body {
     margin-bottom: 100px;
@@ -361,7 +370,7 @@ h2 {
     margin-bottom: 50px;
     margin-left: 50px;
   }
-  
+
   #me {
     width: 400.72px;
     margin-right: 500px;
@@ -416,14 +425,6 @@ h2 {
 
   .slider-container {
     width: 300%; /* Adjust for desktop view */
-  }
-
-  .card {
-    min-width: 33.33%; /* Show 3 cards at a time */
-  }
-
-  .popup-content {
-    width: 60%;
   }
 
   .prev-btn {
