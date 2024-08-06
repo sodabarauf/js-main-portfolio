@@ -1,125 +1,207 @@
-// script.js
-// Sample project data
-const projects = [
-  {
-    title: 'documentation page',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/documentation1.jpg',
-    technologies: ['html', 'css'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    title: 'palindrome checker',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/screen.jpg',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    title: 'roman numeral converter',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/romann.jpg',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    title: 'US number validator',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/shot.jpg',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    title: 'cash register',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/capture_240710_194736.png',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    title: 'pokman project',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'assects/capture_240710_113937.png',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-];
+document.addEventListener('DOMContentLoaded', function() {
+  // Navbar Scroll Spy
+  const navLinks = document.querySelectorAll('.navbar a');
+  const sections = document.querySelectorAll('section');
 
-// Function to create project cards
-function createCards() {
-  const container = document.getElementById('slider-container');
-  projects.forEach((project, index) => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img src="${project.image}" alt="${project.title}">
-      <h3>${project.title}</h3>
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // Hamburger Menu
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  document.getElementById('close-button').addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Dropdown Menus
+  document.getElementById('professional-skill').addEventListener('click', () => {
+    document.getElementById('mobile-menu1').classList.toggle('hidden');
+  });
+  document.getElementById('languages').addEventListener('click', () => {
+    document.getElementById('mobile-menu2').classList.toggle('hidden');
+  });
+  document.getElementById('soft-skill').addEventListener('click', () => {
+    document.getElementById('mobile-menu3').classList.toggle('hidden');
+  });
+  document.getElementById('close-button1').addEventListener('click', () => {
+    document.getElementById('mobile-menu1').classList.toggle('hidden');
+  });
+  document.getElementById('close-button2').addEventListener('click', () => {
+    document.getElementById('mobile-menu2').classList.toggle('hidden');
+  });
+  document.getElementById('close-button3').addEventListener('click', () => {
+    document.getElementById('mobile-menu3').classList.toggle('hidden');
+  });
+
+  // Content Population
+  document.getElementById('home-content').innerHTML = `
+    <p class="colorw txt1 txt">Salaam Alikum!</p>
+    <p class="colorw txt1">I'm Sodaba Rauf</p>
+    <p class="colorw txt1">Glad To See You :)</p>
+  `;
+  document.getElementById('about-content').innerHTML = `
+    <pre class="colorw">
+My name is Sodaba Rauf.
+I'm a WEB Developer.
+I'm currently working with
+VSCode and GitHub.
+My goal is to make
+a professional web page that
+will interest people.
+    </pre>
+  `;
+
+  // Sample project data
+  const projects = [
+    {
+      title: 'Documentation Page',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This project demonstrates the creation of a documentation page using HTML and CSS.',
+      image: 'assests/documentation1.jpg',
+      technologies: ['HTML', 'CSS'],
+      liveLink: 'https://sodabarauf.github.io/technical-documentation-page/',
+      sourceLink: 'https://github.com/sodabarauf/technical-documentation-page',
+    },
+    {
+      title: 'Palindrome Checker',
+      description: 'A tool to check if a given string is a palindrome using HTML, CSS, and JavaScript. The project showcases basic DOM manipulation and string handling in JavaScript.',
+      image: 'assests/palindrome1.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://sodabarauf.github.io/palindrome-project/',
+      sourceLink: 'https://github.com/sodabarauf/palindrome-project',
+    },
+    {
+      title: 'Roman Numeral Converter',
+      description: 'A converter that translates between Roman numerals and regular numbers. This project highlights JavaScript algorithms and user input handling.',
+      image: 'assests/roman.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://sodabarauf.github.io/numerial-roman/',
+      sourceLink: 'https://github.com/sodabarauf/numerial-roman',
+    },
+    {
+      title: 'US Number Validator',
+      description: 'A validation tool for US phone numbers using JavaScript. This project includes regular expressions and input validation techniques.',
+      image: 'assests/us validator.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://sodabarauf.github.io/telephone-number-validator/',
+      sourceLink: 'https://github.com/sodabarauf/telephone-number-validator',
+    },
+    {
+      title: 'Cash Register',
+      description: 'A cash register application that calculates change using HTML, CSS, and JavaScript. It demonstrates arithmetic operations and conditional logic in JavaScript.',
+      image: 'assests/cash.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://sodabarauf.github.io/cash-register/',
+      sourceLink: 'https://github.com/sodabarauf/cash-register',
+    },
+    {
+      title: 'Pokemon Project',
+      description: 'A project displaying information about various Pokémon. It uses HTML, CSS, and JavaScript to fetch data from an API and display it dynamically.',
+      image: 'assests/pokman.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://sodabarauf.github.io/pokemon-project/',
+      sourceLink: 'https://github.com/sodabarauf/pokemon-project',
+    },
+  ];
+
+  // Function to create project cards
+  function createCards() {
+    const container = document.getElementById('slider-container');
+    projects.forEach((project, index) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <img src="${project.image}" alt="${project.title}">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="technologies">
+          ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
+        </div>
+        <button onclick="openProjectPopup(${index})">See Project</button>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // Slider Navigation
+  let currentIndex = 0;
+  function showSlide(index) {
+    const container = document.getElementById('slider-container');
+    const totalSlides = projects.length;
+    const cardWidth = container.querySelector('.card').offsetWidth + 20;
+
+    if (index >= totalSlides) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else {
+      currentIndex = index;
+    }
+    container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  document.querySelector('.next-btn').addEventListener('click', () => showSlide(currentIndex + 1));
+  document.querySelector('.next-btn').addEventListener('touchstart', () => showSlide(currentIndex + 1));
+  document.querySelector('.prev-btn').addEventListener('click', () => showSlide(currentIndex - 1));
+  document.querySelector('.prev-btn').addEventListener('touchstart', () => showSlide(currentIndex - 1));
+
+  // Project Popup Modal
+  window.openProjectPopup = function(index) {
+    const popup = document.getElementById('popup1');
+    const popupContent = document.getElementById('popup-content-inner');
+    const project = projects[index];
+    popupContent.innerHTML = `
+      <h2>${project.title}</h2>
       <p>${project.description}</p>
       <div class="technologies">
         ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
       </div>
-      <button onclick="openPopup(${index})">See Project</button>
+      <a href="${project.liveLink}" target="_blank" class="btn">Live Version</a>
+      <a href="${project.sourceLink}" target="_blank" class="btn">Source Code</a>
     `;
-    container.appendChild(card);
+    popup.style.display = 'flex';
+  };
+
+  document.getElementById('close-btn').addEventListener('click', () => {
+    document.getElementById('popup1').style.display = 'none';
   });
-}
 
-// Function to handle slider navigation
-let currentIndex = 0;
+  // Initialize cards and slider
+  createCards();
+  showSlide(currentIndex);
 
-function showSlide(index) {
-  const container = document.getElementById('slider-container');
-  const totalSlides = projects.length;
-  if (index >= totalSlides) {
-    currentIndex = 0;
-  } else if (index < 0) {
-    currentIndex = totalSlides - 1;
-  } else {
-    currentIndex = index;
+  // Certificate Popup functionality
+  function toggleCertificatePopup() {
+    const popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
   }
 
-  const cardWidth = container.querySelector('.card').offsetWidth;
-  container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-}
+  const certificateButton = document.getElementById('open-certificate-popup');
+  const closeCertificateButton = document.getElementById('close-certificate-popup');
+  
+  certificateButton.addEventListener('click', toggleCertificatePopup);
+  certificateButton.addEventListener('touchstart', toggleCertificatePopup);
+  closeCertificateButton.addEventListener('click', toggleCertificatePopup);
+  closeCertificateButton.addEventListener('touchstart', toggleCertificatePopup);
 
-document.querySelector('.next-btn').addEventListener('click', () => showSlide(currentIndex + 1));
-document.querySelector('.prev-btn').addEventListener('click', () => showSlide(currentIndex - 1));
-
-// Function to open popup
-function openPopup(index) {
-  const popup = document.getElementById('popup');
-  const popupContent = document.getElementById('popup-content-inner');
-  const project = projects[index];
-  popupContent.innerHTML = `
-    <h2>${project.title}</h2>
-    <p>${project.description}</p>
-    <div class="technologies">
-      ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
-    </div>
-    <a href="${project.liveLink}" target="_blank">Live Version</a>
-    <a href="${project.sourceLink}" target="_blank">Source Code</a>
-  `;
-  popup.style.display = 'flex';
-}
-
-document.getElementById('someButton').addEventListener('click', () => openPopup(0));
-
-// Function to close popup
-document.getElementById('close-btn').addEventListener('click', () => {
-  document.getElementById('popup').style.display = 'none';
-});
-
-// Initialize cards
-createCards();
-showSlide(currentIndex);
-
-document.addEventListener('DOMContentLoaded', () => {
+  // Form handling
   const form = document.getElementById('contactForm');
   const nameField = document.getElementById('name');
   const emailField = document.getElementById('email');
@@ -164,7 +246,9 @@ document.addEventListener('DOMContentLoaded', () => {
       errorMessage.style.display = 'block';
       return;
     }
+
     // If validation is OK, submit the form
     form.submit();
   });
 });
+
