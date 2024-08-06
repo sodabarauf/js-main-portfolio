@@ -9,91 +9,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-  <!-- Header with Humberger Menu-->
-  <div class="hide-ellipse-navbar">
-    <img src="assests/Ellipse 20 (5).png" class="ellipse1"/>
-    <img src="assests/Ellipse 330.png" class="ellipse2"/>
-  </div>
-  <header>
+    <!-- Header with Humberger Menu-->
+    <div class="hide-ellipse-navbar">
+      <img src="assests/Ellipse 20 (5).png" class="ellipse1"/>
+      <img src="assests/Ellipse 330.png" class="ellipse2"/>
+    </div>
+    <header>
       <button id="hamburger-menu" type="button"><img src="assests/menue.png" class="size"></button>
-    <nav class=" hidden nav1" id="mobile-menu">
-      <div class="navbar">
-        <button class="x" id="close-button" type="button">x</button><br>
-        <a href="#home" class="colorw"><img src="assests/IMG-20240728-WA0028.jpg" class="sizenav" />Home</a><br>
-        <a href="#about"  class="colorw"><img src="assests/IMG-20240728-WA0033.jpg"  class="sizenav" />AboutMe</a><br>
-        <a href="#Projects"  class="colorw"><img src="assests/IMG-20240728-WA0034.jpg" class="sizenav"/>Works</a><br>
-        <a href="#contact"  class="colorw"><img src="assests/IMG-20240728-WA0032.jpg" class="sizenav"/>Contact</a>
-       
-        
+      <nav class=" hidden nav1" id="mobile-menu">
+        <div class="navbar">
+          <button class="x" id="close-button" type="button">x</button><br>
+          <a href="#home" class="colorw"><img src="assests/IMG-20240728-WA0028.jpg" class="sizenav" />Home</a><br>
+          <a href="#about"  class="colorw"><img src="assests/IMG-20240728-WA0033.jpg"  class="sizenav" />AboutMe</a><br>
+          <a href="#Projects"  class="colorw"><img src="assests/IMG-20240728-WA0034.jpg" class="sizenav"/>Works</a><br>
+          <a href="#contact"  class="colorw"><img src="assests/IMG-20240728-WA0032.jpg" class="sizenav"/>Contact</a> 
+        </div>
+      </nav>
+      <div id="hide">
+        <img src="assests/Ellipse 20 (1) (5).png" class="ellipse3"/>
+        <img src="assests/Ellipse 20 (5).png" class="ellipse4"/>
       </div>
-    </nav>
-    <div id="hide">
-      <img src="assests/Ellipse 20 (1) (5).png" class="ellipse3"/>
-      <img src="assests/Ellipse 20 (5).png" class="ellipse4"/>
-    </div>
-  </header>
-  <!-- Section of Home -->
-  <section id="home">
-    <div class="home" >
-      <pre id="home-content">
-      </pre>
-      <a href="#contact" class="colorw"><button class="hire round-1"  type="button">Hire Me</button></a><a href="cv.pdf/sodaba cv.pdf"><button class="cv round-1" type="button" >Download CV</button></a>
-    </div>
-  </section>
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6">
-      <section id="about">
-        <div class="image-container">
-          <img class="small-circle" src="assests/small_circle_4_x2.svg"/>
-          <div class="overlay-text">
-          <h2 class="padding1">About Myself</h2>
-            <div class="container3">
-              <div class="text">
-                <div id="about-content"></div>
-              </div>
-              <div class="img">
-                <img src="assests/4c8d041e-bb40-4533-b18c-c824d1aced47.webp"/>
-              </div>
-            </div>
-            <div class="popup">
-              <div class="popuptext" id="myPopup">
-                <div class="carde">
-                  <h2 class="colorw">Certificate</h2>
-                  <div class="certificate-container">
-                    <div class="certificate-card">
-                      <img src="assests/certificate1.jpg" alt="Certificate 1">
-                      <a href="https://www.freecodecamp.org/certification/SodabaRauf/responsive-web-design" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                      <img src="assests/certificate2.jpg" alt="Certificate 2">
-                      <a href="https://www.freecodecamp.org/certification/SodabaRauf/javascript-algorithms-and-data-structures-v8" target="_blank">View Certificate</a>
-                    </div>
-                  </div>
-                  <button class="close-popup-btn" id="close-certificate-popup">&times;</button>
+    </header>
+    <!-- Section of Home -->
+    <section id="home">
+      <div class="home" >
+        <pre id="home-content">
+        </pre>
+        <a href="#contact" class="colorw"><button class="hire round-1"  type="button">Hire Me</button></a><a href="cv.pdf/sodaba cv.pdf"><button class="cv round-1" type="button" >Download CV</button></a>
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <section id="about">
+          <div class="image-container">
+            <img class="small-circle" src="assests/small_circle_4_x2.svg"/>
+            <div class="overlay-text">
+              <h2 class="padding1">About Myself</h2>
+              <div class="container3">
+                <div class="text">
+                  <div id="about-content"></div>
+                </div>
+                <div class="img">
+                  <img src="assests/4c8d041e-bb40-4533-b18c-c824d1aced47.webp"/>
                 </div>
               </div>
-              <button class="cv rounded-pill mr-certificate" id="open-certificate-popup" type="button">Certificates</button>
-            </div>
-            
-      </section>
-    </div>
-    <p class="colorb p">________________________________________________________________</p>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-
-
-
-
-
-
-
-      <section id="about">
-        <div class="image-container2">
-          <img src="assests/container_31_x2 (2).svg">
-          <div class="sizenav1">
-          <img src="assests/vector_21_x2 (1).svg">
-        </div> 
-          <div class="circle"></div>
-          <div class="overlay-text1">
+              <div class="popup">
+                <div class="popuptext" id="myPopup">
+                  <div class="carde">
+                    <h2 class="colorw">Certificate</h2>
+                    <div class="certificate-container">
+                      <div class="certificate-card">
+                        <img src="assests/certificate1.jpg" alt="Certificate 1">
+                        <a href="https://www.freecodecamp.org/certification/SodabaRauf/responsive-web-design" target="_blank">View Certificate</a>
+                      </div>
+                      <div class="certificate-card">
+                        <img src="assests/certificate2.jpg" alt="Certificate 2">
+                        <a href="https://www.freecodecamp.org/certification/SodabaRauf/javascript-algorithms-and-data-structures-v8" target="_blank">View Certificate</a>
+                      </div>
+                    </div>
+                    <button class="close-popup-btn" id="close-certificate-popup">&times;</button>
+                  </div>
+                </div>
+                <button class="cv rounded-pill mr-certificate" id="open-certificate-popup" type="button">Certificates</button>
+              </div>  
+        </section>
+      </div>
+      <p class="colorb p">________________________________________________________________</p>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <section id="about">
+          <div class="image-container2">
+            <img src="assests/container_31_x2 (2).svg">
+            <div class="sizenav1">
+              <img src="assests/vector_21_x2 (1).svg">
+            </div> 
+            <div class="circle"></div>
+            <div class="overlay-text1">
               <div>
                 <nav>
                   <button class="about1" id="professional-skill" type="button">Professional Skills ></button>
@@ -142,37 +132,33 @@
                   <img src="assests/vector_38_x2.svg" class="ml-5">
                 </div>
               </div>
-          </div>  
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="Projects" id="Projects">
+      <div class="background-container">
+        <div class="background-image image1"></div>
+        <div class="background-image image2"></div>
+        <div class="background-image image3"></div>
+        <div class="background-image image4"></div>
+      </div>
+      <div class="slider">
+        <button type="button" class="slider-btn prev-btn">&lt;</button>
+        <div class="slider-container" id="slider-container">
+          <!-- Cards will be dynamically inserted here -->
         </div>
-      </section>
-    </div>
-  </div>
-
-  
-
-  <section class="Projects" id="Projects">
-    <div class="background-container">
-      <div class="background-image image1"></div>
-      <div class="background-image image2"></div>
-      <div class="background-image image3"></div>
-      <div class="background-image image4"></div>
-    </div>
-    <div class="slider">
-      <button type="button" class="slider-btn prev-btn">&lt;</button>
-      <div class="slider-container" id="slider-container">
-        <!-- Cards will be dynamically inserted here -->
+        <button type="button" class="slider-btn next-btn">&gt;</button>
       </div>
-      <button type="button" class="slider-btn next-btn">&gt;</button>
-    </div>
-    <!-- Popup Modal -->
-    <div class="popup1" id="popup1">
-      <div class="popup-content">
-        <span class="close-btn" id="close-btn">&times;</span>
-        <div id="popup-content-inner"></div>
+      <!-- Popup Modal -->
+      <div class="popup1" id="popup1">
+        <div class="popup-content">
+          <span class="close-btn" id="close-btn">&times;</span>
+          <div id="popup-content-inner"></div>
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
     <section class="contact" id="contact">
       <div class="container">
         <img src="assests/working - Copy.png" alt="Working Image" class="top-left-image" />
