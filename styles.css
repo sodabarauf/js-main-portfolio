@@ -816,12 +816,12 @@ footer {
   .prev-btn {
     left: 10px;
   }
- 
- .next-btn {
+
+  .next-btn {
     right: 10px;
   }
 
- .contact {
+  .contact {
     margin-top: 300px;
   }
 
@@ -855,10 +855,6 @@ footer {
 
 /* screen size 768px */
 @media (min-width: 768px) {
-  .card {
-    width: 100%;
-  }
-
   .card .links {
     display: none; /* Hide links in tablet view and above */
   }
@@ -893,16 +889,6 @@ footer {
   /* Underline active navbar link */
   .navbar a.active {
     text-decoration: underline;
-  }
-
-  .navbar {
-    color: white;
-    display: flex;
-    flex-flow: row;
-    height: 50px;
-    background: none;
-    position: fixed;
-    z-index: 1000;
   }
 
   .hide-ellipse-navbar {
