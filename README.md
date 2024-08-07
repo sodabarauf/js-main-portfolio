@@ -96,7 +96,7 @@ professionaSskill.addEventListener('click', () => {
 ```
 
 ## Demo 📸
-life demo link []
+life demo link [ https://sodabarauf.github.io/js-main-portfolio/]
 
 ## Technologies Used 🛠️
 - HTML
