@@ -195,7 +195,7 @@ will interest people.
 
   const certificateButton = document.getElementById('open-certificate-popup');
   const closeCertificateButton = document.getElementById('close-certificate-popup');
-  
+
   certificateButton.addEventListener('click', toggleCertificatePopup);
   certificateButton.addEventListener('touchstart', toggleCertificatePopup);
   closeCertificateButton.addEventListener('click', toggleCertificatePopup);
