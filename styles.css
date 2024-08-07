@@ -368,12 +368,6 @@ img {
   cursor: pointer;
 }
 
-
-
-
-
-
-
 .slider {
   position: relative;
   width: 50%;
@@ -608,18 +602,6 @@ img {
     right: 10px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact {
   position: relative; /* Make the contact div the reference point for the absolutely positioned image */
@@ -1099,9 +1081,6 @@ footer {
     margin-top: 20%;
   }
 
- 
-
-
 /* Hide images fixed position */
 #hide .ellipse3,
 #hide .ellipse4 {
@@ -1115,16 +1094,27 @@ footer {
   text-decoration: underline;
 }
 
-.navbar {
-  color: white;
-  display: flex;
-  flex-flow: row;
-  height: 50px;
-  background: none;
-  position: fixed;
- z-index: 1000;
-}
+  .navbar {
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    background: none;
+    position: fixed;
+    z-index: 1000;
+  }
 
+  .navbar1 {
+    color: white;
+    display: block;
+    width: 220px;
+    border-radius: 25% 80% 10% 10%;
+    padding: 40px;
+    margin: 10px;
+    list-style-type: none;
+    height: 250px;
+    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+  }
 
   .row {
     background: rgba(47, 47, 138, 1);
