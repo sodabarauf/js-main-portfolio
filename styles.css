@@ -282,14 +282,6 @@ img {
   display: none;
 }
 
-.card {
-  background: linear-gradient(180deg, #763cac 0%, #301846 100%);
-  display: inline-block;
-  width: 22rem;
-  height: 20rem;
-  border-radius: 10%;
-}
-
 .popup {
   position: relative;
   display: inline-block;
@@ -346,6 +338,25 @@ img {
   text-decoration: none;
 }
 
+.popup-content a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-item a {
+  color: #fff; /* or any color that fits your design */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.me a {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
 .certificate-card a:hover {
   text-decoration: underline;
 }
@@ -395,6 +406,16 @@ img {
   border-radius: 8px 8px 0 0;
 }
 
+h3,
+h2 {
+  font-size: 20px;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .card h3 {
   font-size: 1.2em;
   margin: 10px 0;
@@ -430,6 +451,14 @@ img {
   text-decoration: none;
 }
 
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
 .card .links a:hover {
   text-decoration: underline;
 }
@@ -443,6 +472,15 @@ img {
   border-radius: 5px;
   margin-top: 10px;
   transition: background-color 0.3s;
+}
+
+.contact-form button {
+  background: linear-gradient(45deg, #2957a3, #c961de);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button:hover {
@@ -514,17 +552,6 @@ img {
   margin-bottom: 20px;
 }
 
-.popup-content a {
-  display: block;
-  margin: 10px 0;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.popup-content a:hover {
-  text-decoration: underline;
-}
-
 .contact {
   position: relative; /* Make the contact div the reference point for the absolutely positioned image */
   border: 1px transparent;
@@ -594,16 +621,6 @@ img {
   font-size: 20px;
 }
 
-.contact-item a {
-  color: #fff; /* or any color that fits your design */
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
-}
-
 .contact-form {
   padding: 20px;
   width: 100%;
@@ -625,15 +642,6 @@ img {
   color: #000;
 }
 
-.contact-form button {
-  background: linear-gradient(45deg, #2957a3, #c961de);
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .contact-form button:hover {
   background-color: #484891;
 }
@@ -647,28 +655,12 @@ footer {
   background-color: transparent;
 }
 
-h3,
-h2 {
-  font-size: 20px;
-  display: flex;
-  margin-left: 100px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 .me {
   border: 1px solid transparent;
   padding: 5px;
   margin-left: 50px;
   width: 400px;
   background: linear-gradient(45deg, #2957a3, #c961de);
-}
-
-.me a {
-  margin: 10px;
-  padding: 10px;
-  color: white;
 }
 
 .me a i {
@@ -747,28 +739,6 @@ h2 {
     text-decoration: underline;
   }
 
-  .navbar {
-    color: white;
-    display: flex;
-    flex-flow: row;
-    height: 50px;
-    background: none;
-    position: fixed;
-    z-index: 1000;
-  }
-
-  .navbar1 {
-    color: white;
-    display: block;
-    width: 220px;
-    border-radius: 25% 80% 10% 10%;
-    padding: 40px;
-    margin: 10px;
-    list-style-type: none;
-    height: 250px;
-    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
-  }
-
   .row {
     background: rgba(47, 47, 138, 1);
     border-radius: 100px 30px 30px 30px;
@@ -843,14 +813,6 @@ h2 {
     width: 100%; /* Adjust for desktop view */
   }
 
-  .card {
-    min-width: 33.33%; /* Show 3 cards at a time */
-  }
-
-  .popup-content {
-    width: 60%;
-  }
-
   .prev-btn {
     left: 10px;
   }
@@ -866,7 +828,7 @@ h2 {
   .hidden {
     display: none;
   }
-  
+
   .navbar1 {
     background-color: #5636d6;
     padding: 20px;
@@ -926,81 +888,6 @@ h2 {
     margin-bottom: 30px;
     margin-top: 20px;
     margin-right: 20px;
-  }
-
-  .hide-ellipse-navbar {
-    display: none;
-  }
-
-  .home {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px 30px 30px 30px;
-    margin-left: 90px;
-    background: rgba(47, 47, 138, 1);
-    width: 100%;
-    height: 500px;
-    margin-top: 40%;
-  }
-
-  .txt {
-    margin-top: 7%;
-    margin-left: 10%;
-  }
-
-  .txt1 {
-    margin-left: 10%;
-  }
-
-  .size {
-    display: none;
-  }
-
-  .sizenav {
-    display: none;
-  }
-
-  .x {
-    display: none;
-  }
-
-  .nav1 {
-    display: flex;
-  }
-
-  .navbar {
-    color: white;
-    display: flex;
-    flex-flow: row;
-    height: 50px;
-    background: none;
-    position: fixed;
-    margin-left: 12%;
-  }
-
-  .x1 {
-    display: block;
-    color: white;
-    border: none;
-    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
-  }
-
-  .navbar1 {
-    color: white;
-    display: block;
-    width: 220px;
-    border-radius: 25% 80% 10% 10%;
-    padding: 40px;
-    margin: 10px;
-    list-style-type: none;
-    height: 250px;
-    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
-  }
-
-  #hide {
-    display: inline;
-    margin-top: 1px;
   }
 
   /* Underline active navbar link */
@@ -1205,21 +1092,6 @@ h2 {
     color: white;
     border: none;
     background: linear-gradient(180deg, #763cac 0%, #301846 100%);
-  }
-  
-  /* Underline active navbar link */
-  .navbar a.active {
-    text-decoration: underline;
-  }
-
-  .navbar {
-    color: white;
-    display: flex;
-    flex-flow: row;
-    height: 50px;
-    background: none;
-    position: fixed;
-    z-index: 1000;
   }
 
   .about1 {
