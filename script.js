@@ -1,19 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   // Navbar Scroll Spy
   const navLinks = document.querySelectorAll('.navbar a');
   const sections = document.querySelectorAll('section');
 
   window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
         current = section.getAttribute('id');
       }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.classList.remove('active');
       if (link.getAttribute('href').includes(current)) {
         link.classList.add('active');
@@ -122,7 +122,7 @@ will interest people.
   ];
 
   // Function to create project cards
-  function createCards() {
+  const createCards = () => {
     const container = document.getElementById('slider-container');
     projects.forEach((project, index) => {
       const card = document.createElement('div');
@@ -138,11 +138,11 @@ will interest people.
       `;
       container.appendChild(card);
     });
-  }
+  };
 
   // Slider Navigation
   let currentIndex = 0;
-  function showSlide(index) {
+  const showSlide = (index) => {
     const container = document.getElementById('slider-container');
     const totalSlides = projects.length;
     const cardWidth = container.querySelector('.card').offsetWidth + 20;
@@ -155,7 +155,7 @@ will interest people.
       currentIndex = index;
     }
     container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-  }
+  };
 
   document.querySelector('.next-btn').addEventListener('click', () => showSlide(currentIndex + 1));
   document.querySelector('.next-btn').addEventListener('touchstart', () => showSlide(currentIndex + 1));
@@ -163,7 +163,7 @@ will interest people.
   document.querySelector('.prev-btn').addEventListener('touchstart', () => showSlide(currentIndex - 1));
 
   // Project Popup Modal
-  window.openProjectPopup = function(index) {
+  window.openProjectPopup = (index) => {
     const popup = document.getElementById('popup1');
     const popupContent = document.getElementById('popup-content-inner');
     const project = projects[index];
@@ -188,10 +188,10 @@ will interest people.
   showSlide(currentIndex);
 
   // Certificate Popup functionality
-  function toggleCertificatePopup() {
+  const toggleCertificatePopup = () => {
     const popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
-  }
+  };
 
   const certificateButton = document.getElementById('open-certificate-popup');
   const closeCertificateButton = document.getElementById('close-certificate-popup');
@@ -251,4 +251,3 @@ will interest people.
     form.submit();
   });
 });
-
