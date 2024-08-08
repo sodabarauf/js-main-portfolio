@@ -707,8 +707,8 @@ footer {
     display: none;
   }
 
-   /* Underline active navbar link */
-   .navbar a.active {
+  /* Underline active navbar link */
+  .navbar a.active {
     text-decoration: underline;
   }
 
@@ -831,7 +831,7 @@ footer {
     max-width: 80%;
     max-height: 70%;
   }
-  
+
   .popup {
     margin-bottom: 600px;
   }
@@ -979,7 +979,7 @@ footer {
     max-width: 600px;
     border-radius: 10px;
   }
-  
+
   .Projects {
     background: url(./assests/Background.png);
     background-position: center;
@@ -1207,7 +1207,7 @@ footer {
     padding: 1px;
     margin-top: 400px;
   }
-  
+
   .card {
     background: transparent;
     display: inline-block;
@@ -1220,71 +1220,17 @@ footer {
     max-width: 900px;
   }
 
-
   .contact-content {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .top-left-image {
-    position: absolute; /* Position the image absolutely within the contact div */
-    top: -160px; /* Adjust this value to position the image outside the div */
-    left: 60px; /* Align the image to the left of the contact div */
-    width: 200px; /* Maintain the specified width */
-    height: 300px; /* Maintain the specified height */
+    position: absolute;
+    top: -160px;
+    left: 60px;
+    width: 200px;
+    height: 300px;
     margin-bottom: 500px;
   }
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
