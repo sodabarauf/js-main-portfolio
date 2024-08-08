@@ -81,15 +81,15 @@ will interest people.
     },
     {
       title: 'Palindrome Checker',
-      description: 'A tool to check if a given string is a palindrome using HTML, CSS, and JavaScript. The project showcases basic DOM manipulation and string handling in JavaScript.',
+      description: 'A tool to check if a given string is a palindrome using HTML, CSS, and JavaScript. The project showcases basic DOM manipulation and string handling in JavaScript.when user click it display true or false',
       image: 'assests/palindrome1.jpg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveLink: 'https://sodabarauf.github.io/palindrome-project/',
       sourceLink: 'https://github.com/sodabarauf/palindrome-project',
     },
     {
-      title: 'Roman Numeral Converter',
-      description: 'A converter that translates between Roman numerals and regular numbers. This project highlights JavaScript algorithms and user input handling.',
+      title: 'Roman Converter',
+      description: 'A converter that translates between Roman numerals and regular numbers. This project highlights JavaScript algorithms and user input handling.it changes values to romai number',
       image: 'assests/roman.jpg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveLink: 'https://sodabarauf.github.io/numerial-roman/',
@@ -97,7 +97,7 @@ will interest people.
     },
     {
       title: 'US Number Validator',
-      description: 'A validation tool for US phone numbers using JavaScript. This project includes regular expressions and input validation techniques.',
+      description: 'A validation tool for US phone numbers using JavaScript. This project includes regular expressions and input validation techniques.when user click it display',
       image: 'assests/us validator.jpg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveLink: 'https://sodabarauf.github.io/telephone-number-validator/',
@@ -113,7 +113,7 @@ will interest people.
     },
     {
       title: 'Pokemon Project',
-      description: 'A project displaying information about various Pokémon. It uses HTML, CSS, and JavaScript to fetch data from an API and display it dynamically.',
+      description: 'A project displaying information about various Pokémon. It uses HTML, CSS, and JavaScript to fetch data from an API and display it dynamically. this is a dynamic app',
       image: 'assests/pokman.jpg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveLink: 'https://sodabarauf.github.io/pokemon-project/',
