@@ -784,14 +784,14 @@ footer {
     position: fixed;
     top: -30px;
     left: -30px;
-    width: 25%;
+    width: 20%;
   }
 
   .ellipse3 {
     position: fixed;
     width: 15%;
-    top: 50px;
-    left: 160px;
+    top: 40px;
+    left: 120px;
   }
 
   .hire {
@@ -993,9 +993,9 @@ footer {
 
   .background-image {
     position: absolute;
-    top: 1700px;
+    top: 1550px;
     left: 150px;
-    width: 379px;
+    width: 80%;
     height: 835.63px;
     background-size: 90%; /* Cover the whole div */
     background-repeat: no-repeat;
