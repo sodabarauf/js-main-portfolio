@@ -466,7 +466,6 @@ h2 {
 }
 
 .card button {
- /* display: none; */
   background: linear-gradient(45deg, #2957a3, #c961de);
   color: #fff;
   border: none;
@@ -570,7 +569,6 @@ h2 {
   width: 379px; /* Maintain the specified width */
   height: 835.63px; /* Maintain the specified height */
   margin-bottom: 500px;
- /* display: none; */
 }
 
 .container {
