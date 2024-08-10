@@ -177,7 +177,7 @@ will interest people.
       <a href="${project.sourceLink}" target="_blank" class="btn">Source Code</a>
     `;
     popup.style.display = 'flex';
-    console.log("buttonClick");
+    console.log('buttonClick');
   };
 
   document.getElementById('close-btn').addEventListener('click', () => {
