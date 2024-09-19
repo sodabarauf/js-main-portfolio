@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   closeCertificateButton.addEventListener('click', toggleCertificatePopup);
   closeCertificateButton.addEventListener('touchstart', toggleCertificatePopup);
 
-   // Get form elements
+  // Get form elements
   const form = document.getElementById('contactForm');
   const nameField = document.getElementById('name');
   const emailField = document.getElementById('email');
@@ -209,28 +209,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Clear previous error message
     errorMessage.style.display = 'none';
 
-  // Get trimmed field values
-  const name = nameField.value.trim();
-  const email = emailField.value.trim().toLowerCase(); // Convert email to lowercase
-  const subject = subjectField.value.trim();
-  const message = messageField.value.trim();
+    // Get trimmed field values
+    const name = nameField.value.trim();
+    const email = emailField.value.trim().toLowerCase(); // Convert email to lowercase
+    const subject = subjectField.value.trim();
+    const message = messageField.value.trim();
 
-  // Validation: Check if any fields are empty
-  if (!name || !email || !subject || !message) {
-    errorMessage.textContent = 'All fields are required.';
-    errorMessage.style.display = 'block'; // Show error message
-    return; // Stop form submission
-  }
+    // Validation: Check if any fields are empty
+    if (!name || !email || !subject || !message) {
+      errorMessage.textContent = 'All fields are required.';
+      errorMessage.style.display = 'block'; // Show error message
+      return; // Stop form submission
+    }
 
-  // Validate email format (all lowercase and correct format)
-  const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-  if (!emailPattern.test(email)) {
-    errorMessage.textContent = 'Please enter a valid email address.';
-    errorMessage.style.display = 'block'; // Show error message
-    return; // Stop form submission
-  }
+    // Validate email format (all lowercase and correct format)
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+      errorMessage.textContent = 'Please enter a valid email address.';
+      errorMessage.style.display = 'block'; // Show error message
+      return; // Stop form submission
+    }
 
-  // If validation is successful, submit the form
+    // If validation is successful, submit the form
     errorMessage.style.display = 'none'; // Hide any error messages
     form.submit(); // Submit the form
   });
