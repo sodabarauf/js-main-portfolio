@@ -1,11 +1,11 @@
-body, html {
+body,
+html {
   max-width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background: #0f103f;
   margin-bottom: 100px;
   padding: 0;
 }
-
 
 .hire {
   color: white;
@@ -78,7 +78,7 @@ body, html {
 }
 
 span {
-font-size: 10px;
+  font-size: 10px;
 }
 
 .small-circle {
@@ -278,9 +278,9 @@ img {
 }
 
 .ellpse5 {
-  Width: 1042px;
-  Height: 330px;
-  Top: -51px;
+  width: 1042px;
+  height: 330px;
+  top: -51px;
   margin-left: 14px;
 }
 
@@ -301,7 +301,7 @@ img {
 
 .padding1 {
   margin-top: 80px;
-  margin-left:-160px;
+  margin-left: -160px;
   font-family: sans-serif;
   font-size: 18px;
 }
@@ -763,7 +763,7 @@ footer {
     align-items: center;
     border-radius: 100px 30px 30px 30px;
     margin-left: 90px;
-    background: #2F2F8A;
+    background: #2f2f8a;
     width: 100%;
     height: 550px;
     margin-top: 5%;
@@ -1142,7 +1142,7 @@ footer {
     border-radius: 100px 30px 30px 30px;
     margin-right: 1px;
     margin-left: 150px;
-    background: #2F2F8A;
+    background: #2f2f8a;
     width: 100%;
     height: 600px;
     margin-top: 2%;
@@ -1231,7 +1231,6 @@ footer {
   }
 
   .txt1 {
-    font-family: popin;
     font-size: 40px;
   }
 
@@ -1263,6 +1262,7 @@ footer {
     border-radius: 100px;
     padding: 2px;
   }
+
   .about1 {
     margin-right: 150px;
     width: 25%;
@@ -1336,7 +1336,6 @@ footer {
     max-width: 900px;
   }
 
-
   .contact {
     position: relative; /* Make the contact div the reference point for the absolutely positioned image */
     border: 1px transparent;
@@ -1365,6 +1364,7 @@ footer {
     top: -50.63px;
     left: 160px;
   }
+
   .me {
     margin-left: 350px;
     width: 50%;
