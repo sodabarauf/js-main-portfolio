@@ -194,55 +194,44 @@ document.addEventListener('DOMContentLoaded', () => {
   closeCertificateButton.addEventListener('click', toggleCertificatePopup);
   closeCertificateButton.addEventListener('touchstart', toggleCertificatePopup);
 
-// Form handling
-const form = document.getElementById('contactForm');
-const nameField = document.getElementById('name');
-const emailField = document.getElementById('email');
-const subjectField = document.getElementById('subject');
-const messageField = document.getElementById('message');
-const errorMessage = document.getElementById('errorMessage');
+   // Get form elements
+  const form = document.getElementById('contactForm');
+  const nameField = document.getElementById('name');
+  const emailField = document.getElementById('email');
+  const subjectField = document.getElementById('subject');
+  const messageField = document.getElementById('message');
+  const errorMessage = document.getElementById('errorMessage');
 
-// Load data from localStorage
-const formData = JSON.parse(localStorage.getItem('formData')) || {};
-if (formData.name) nameField.value = formData.name;
-if (formData.email) emailField.value = formData.email;
-if (formData.subject) subjectField.value = formData.subject;
-if (formData.message) messageField.value = formData.message;
+  // Form submission event listener
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent the form from submitting
 
-// Save data to localStorage on input change
-[nameField, emailField, subjectField, messageField].forEach((field) => {
-  field.addEventListener('input', () => {
-    formData[field.id] = field.value;
-    localStorage.setItem('formData', JSON.stringify(formData));
-  });
-});
+    // Clear previous error message
+    errorMessage.style.display = 'none';
 
-// Handle form submission
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent form from redirecting or refreshing the page
-  errorMessage.style.display = 'none'; // Hide any previous error messages
-
+  // Get trimmed field values
   const name = nameField.value.trim();
-  const email = emailField.value.trim().toLowerCase(); // Ensure email is lowercase for validation
+  const email = emailField.value.trim().toLowerCase(); // Convert email to lowercase
   const subject = subjectField.value.trim();
   const message = messageField.value.trim();
 
-  // Validate that no fields are empty
+  // Validation: Check if any fields are empty
   if (!name || !email || !subject || !message) {
     errorMessage.textContent = 'All fields are required.';
-    errorMessage.style.display = 'block';
-    return;
+    errorMessage.style.display = 'block'; // Show error message
+    return; // Stop form submission
   }
 
-  // Validate email format
+  // Validate email format (all lowercase and correct format)
   const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   if (!emailPattern.test(email)) {
     errorMessage.textContent = 'Please enter a valid email address.';
-    errorMessage.style.display = 'block';
-    return;
+    errorMessage.style.display = 'block'; // Show error message
+    return; // Stop form submission
   }
 
-  // If all validation passes, submit the form
-  form.submit();
-});
+  // If validation is successful, submit the form
+    errorMessage.style.display = 'none'; // Hide any error messages
+    form.submit(); // Submit the form
+  });
 });
