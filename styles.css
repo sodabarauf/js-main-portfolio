@@ -1,8 +1,11 @@
-body {
+body, html {
+  max-width: 100%;
+  overflow-x: hidden; 
   background: #0f103f;
-  margin: 0;
+  margin-bottom: 100px;
   padding: 0;
 }
+
 
 .hire {
   color: white;
@@ -32,7 +35,7 @@ body {
 }
 
 .mr-certificate {
-  margin-left: 100px;
+  margin-left: 150px;
   margin-bottom: 90px;
   width: 100px;
   border: none;
@@ -68,8 +71,14 @@ body {
   margin-left: 60px;
 }
 
+.colorw1,
 .colorw {
   color: white;
+  font-size: larger;
+}
+
+span {
+font-size: 10px;
 }
 
 .small-circle {
@@ -125,8 +134,20 @@ img {
   display: block;
   width: 220px;
   border-radius: 25% 80% 10% 10%;
-  padding: 40px;
+  padding-left: 30px;
   margin: 10px;
+  list-style-type: none;
+  height: 250px;
+  background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+}
+
+.navbar1 {
+  color: white;
+  display: block;
+  width: 220px;
+  border-radius: 25% 80% 10% 10%;
+  padding: 40px;
+  margin-left: 150px;
   list-style-type: none;
   height: 250px;
   background: linear-gradient(180deg, #763cac 0%, #301846 100%);
@@ -146,9 +167,9 @@ img {
   background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
   border-radius: 50%;
   border: none;
-  padding: 2%;
+  padding: 5%;
   color: white;
-  margin-left: 10px;
+  margin-left: -100px;
   font-size: 15px;
   margin-top: 60px;
 }
@@ -157,9 +178,9 @@ img {
   background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
   border-radius: 50%;
   border: none;
-  padding: 2%;
+  padding: 5%;
   color: white;
-  margin-left: 50px;
+  margin-left: -50px;
   font-size: 15px;
   margin-top: 10px;
 }
@@ -168,7 +189,7 @@ img {
   background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
   border-radius: 50%;
   border: none;
-  padding: 2%;
+  padding: 5%;
   color: white;
   margin-left: 50px;
   font-size: 15px;
@@ -256,6 +277,13 @@ img {
   width: 30%;
 }
 
+.ellpse5 {
+  Width: 1042px;
+  Height: 330px;
+  Top: -51px;
+  margin-left: 14px;
+}
+
 .image3 {
   position: fixed;
 }
@@ -273,9 +301,9 @@ img {
 
 .padding1 {
   margin-top: 80px;
-  margin-left: 60px;
+  margin-left:-160px;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 18px;
 }
 
 #hide {
@@ -564,10 +592,10 @@ h2 {
 
 .top-left-image {
   position: absolute; /* Position the image absolutely within the contact div */
-  top: -500.63px; /* Adjust this value to position the image outside the div */
+  top: -400.63px; /* Adjust this value to position the image outside the div */
   left: -60px; /* Align the image to the left of the contact div */
-  width: 379px; /* Maintain the specified width */
-  height: 835.63px; /* Maintain the specified height */
+  width: 279px; /* Maintain the specified width */
+  height: 635.63px; /* Maintain the specified height */
   margin-bottom: 500px;
 }
 
@@ -578,7 +606,7 @@ h2 {
   background-color: #2f328a;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 60px;
+  margin: 60px 20px;
   color: #fff;
   border-top-left-radius: 100px;
 }
@@ -640,9 +668,7 @@ h2 {
   margin: 10px 0;
   border: none;
   border-radius: 5px;
-  background-color: #ebfaff;
   opacity: 30%;
-  color: #000;
 }
 
 .contact-form button:hover {
@@ -660,10 +686,10 @@ footer {
 
 .me {
   border: 1px solid transparent;
-  padding: 5px;
-  margin-left: 50px;
-  width: 400px;
-  background: linear-gradient(45deg, #2957a3, #c961de);
+  padding: 1px;
+  margin: 20px;
+  width: 500px;
+  background: linear-gradient(45deg, #2957a3, #6d3478);
 }
 
 .me a i {
@@ -687,6 +713,10 @@ footer {
 
 /* screen size 768px */
 @media only screen and (min-width: 768px) {
+  body {
+    margin-bottom: 0;
+  }
+
   .card .links {
     display: none; /* Hide links in tablet view and above */
   }
@@ -733,19 +763,23 @@ footer {
     align-items: center;
     border-radius: 100px 30px 30px 30px;
     margin-left: 90px;
-    background: rgba(47, 47, 138, 1);
+    background: #2F2F8A;
     width: 100%;
-    height: 500px;
-    margin-top: 40%;
+    height: 550px;
+    margin-top: 5%;
+  }
+
+  span {
+    font-size: small;
   }
 
   .txt {
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 10%;
   }
 
   .txt1 {
-    margin-left: 10%;
+    margin-left: 7%;
   }
 
   .size {
@@ -780,16 +814,22 @@ footer {
 
   .ellipse4 {
     position: fixed;
-    top: -30px;
-    left: -30px;
+    left: 1px;
     width: 20%;
   }
 
   .ellipse3 {
     position: fixed;
-    width: 15%;
-    top: 40px;
-    left: 120px;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .ellpse5 {
+    width: 100%;
+    height: 258.35px;
+    top: -435px;
+    margin-left: 659px;
   }
 
   .hire {
@@ -798,6 +838,7 @@ footer {
 
   .cv {
     padding: 10px;
+    margin-top: 10%;
     margin-right: 25%;
   }
 
@@ -808,7 +849,7 @@ footer {
   }
 
   .row {
-    background: rgba(47, 47, 138, 1);
+    background: #2f2f8a;
     border-radius: 100px 30px 30px 30px;
     display: flex;
     flex-direction: row-reverse;
@@ -862,10 +903,10 @@ footer {
   }
 
   .padding1 {
-    margin-top: 40px;
-    margin-right: 150px;
+    margin-top: 80px;
+    margin-right: 20px;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .overlay-text1 {
@@ -894,6 +935,11 @@ footer {
   .sizenav1 {
     height: 10px;
     margin-left: 30%;
+  }
+
+  .colorw1 {
+    font-size: 24px;
+    color: white;
   }
 
   #hide {
@@ -991,7 +1037,7 @@ footer {
 
   .background-image {
     position: absolute;
-    top: 1550px;
+    top: 1450px;
     left: 150px;
     width: 80%;
     height: 835.63px;
@@ -1035,6 +1081,7 @@ footer {
 
   .popup-content {
     max-width: 700px;
+    color: white;
   }
 
   .contact-content {
@@ -1059,8 +1106,8 @@ footer {
     position: absolute; /* Position the image absolutely within the contact div */
     top: -160.63px; /* Adjust this value to position the image outside the div */
     left: 30px; /* Align the image to the left of the contact div */
-    width: 350px; /* Maintain the specified width */
-    height: 835.63px; /* Maintain the specified height */
+    width: 250px; /* Maintain the specified width */
+    height: 635.63px; /* Maintain the specified height */
     margin-bottom: 500px;
   }
 
@@ -1069,7 +1116,7 @@ footer {
     justify-content: center;
     width: 500.72px;
     margin-right: 50px;
-    margin-left: 250px;
+    margin-left: 200px;
   }
 
   footer {
@@ -1086,14 +1133,19 @@ footer {
 
 /* 1440px screen size */
 @media screen and (min-width: 1440px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .home {
     border-radius: 100px 30px 30px 30px;
     margin-right: 1px;
     margin-left: 150px;
-    background: rgba(47, 47, 138, 1);
+    background: #2F2F8A;
     width: 100%;
-    height: 500px;
-    margin-top: 20%;
+    height: 600px;
+    margin-top: 2%;
   }
 
   .navbar {
@@ -1104,6 +1156,29 @@ footer {
     background: none;
     position: fixed;
     margin-left: 60%;
+  }
+
+  .navbar1 {
+    color: white;
+    display: block;
+    width: 220px;
+    border-radius: 25% 80% 10% 10%;
+    padding: 40px;
+    margin-left: 100px;
+    list-style-type: none;
+    height: 250px;
+    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+  }
+
+  .row {
+    background: #2f2f8a;
+    border-radius: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 50px;
+    height: 600px;
   }
 
   .ellipse4 {
@@ -1119,15 +1194,8 @@ footer {
     margin-left: 80px;
   }
 
-  .row {
-    background: rgba(47, 47, 138, 1);
-    border-radius: 100px 30px 30px 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin-left: 150px;
-    margin-top: 50px;
-    height: 600px;
+  .ellpse5 {
+    height: 300px;
   }
 
   .hire {
@@ -1136,43 +1204,81 @@ footer {
 
   .cv {
     padding: 10px;
-    margin-right: 900px;
+    margin-top: 3%;
+    margin-right: 60%;
   }
 
   .round-1 {
-    border-radius: 14.54px 14.54px 14.54px 14.54px;
-    padding: 15px;
-    width: 10%;
+    border-radius: 6px 6px 6px 6px;
+    padding: 6px;
+    width: 13%;
+    height: 10%;
   }
 
   .overlay-text {
     margin-top: 20%;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 30%;
+    right: 20%;
     transform: translate(-50%, -50%);
     background: linear-gradient(132.61deg, rgba(201, 97, 222, 0.8) 16.04%, rgba(41, 87, 163, 0.8) 84.51%);
     color: #fff;
     text-align: justify;
-    height: 60%;
-    width: 50%;
+    height: 80%;
+    width: 60%;
     border-radius: 50%;
     display: inline-block;
   }
 
+  .txt1 {
+    font-family: popin;
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+
   .padding1 {
-    margin-top: 50px;
-    margin-right: 100px;
+    margin-top: 150px;
+    margin-left: -10px;
+    margin-bottom: -1px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .colorw {
+    font-size: 14px;
+  }
+
+  .colorw1 {
+    font-size: 54px;
+    color: white;
   }
 
   .mr-certificate {
-    margin-left: 90px;
+    margin-left: 200px;
     margin-bottom: 90px;
-    width: 100px;
-    border: none;
+    width: 130px;
+    border-radius: 100px;
     padding: 2px;
+  }
+  .about1 {
+    margin-right: 150px;
+    width: 25%;
+    font-size: 20px;
+  }
+
+  .about2 {
+    width: 22%;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+
+  .about3 {
+    width: 18%;
+    margin-right: 50px;
+    font-size: 20px;
   }
 
   .overlay-text1 {
@@ -1193,7 +1299,7 @@ footer {
     margin-top: 150px;
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 90%;
     height: auto;
     margin-left: 80px;
   }
@@ -1204,15 +1310,24 @@ footer {
   }
 
   .small-circle {
-    width: 50%;
+    width: 100%;
     padding: 1px;
-    margin-top: 400px;
+    margin-top: 300px;
+  }
+
+  .Projects {
+    height: 800px;
+  }
+
+  .background-image {
+    top: 1550px;
+    left: 150px;
   }
 
   .card {
     background: transparent;
     display: inline-block;
-    width: 100%;
+    min-width: 60%;
     height: 100%;
     border-radius: 10%;
   }
@@ -1221,17 +1336,42 @@ footer {
     max-width: 900px;
   }
 
+
+  .contact {
+    position: relative; /* Make the contact div the reference point for the absolutely positioned image */
+    border: 1px transparent;
+    margin-top: 100px;
+    padding: 100px;
+  }
+
+  .container {
+    width: 80%;
+    height: 600px;
+    background-color: #2f328a;
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+
+  .info-content {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
   .contact-content {
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 50px;
   }
 
   .top-left-image {
-    position: absolute;
-    top: -160px;
-    left: 60px;
-    width: 200px;
-    height: 300px;
-    margin-bottom: 500px;
+    top: -50.63px;
+    left: 160px;
+  }
+  .me {
+    margin-left: 350px;
+    width: 50%;
+    background: linear-gradient(45deg, #2957a3, #6d3478);
+  }
+
+  .me a {
+    padding-right: 50px;
   }
 }

@@ -53,20 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Content Population
   document.getElementById('home-content').innerHTML = `
-    <p class="colorw txt1 txt">Salaam Alikum!</p>
-    <p class="colorw txt1">I'm Sodaba Rauf</p>
-    <p class="colorw txt1">Glad To See You :)</p>
+    <p class="colorw1 txt1 txt">Salaam Alikum!</p>
+    <p class="colorw1 txt1">I'm Sodaba Rauf <span>Glad To See You :)</span></p>
   `;
   document.getElementById('about-content').innerHTML = `
-    <pre class="colorw">
-My name is Sodaba Rauf.
-I'm a WEB Developer.
-I'm currently working with
-VSCode and GitHub.
-My goal is to make
-a professional web page that
-will interest people.
-    </pre>
+    <p class="colorw"> My name is Sodaba Rauf.I'm a WEB Developer, currently working with VSCode, Git and GitHub My goal is to make a professional web page that will interest people.
+    </p>
   `;
 
   // Sample project data
@@ -116,8 +108,8 @@ will interest people.
       description: 'A project displaying information about various Pokémon. It uses HTML, CSS, and JavaScript to fetch data from an API and display it dynamically. this is a dynamic app',
       image: 'assests/pokman.jpg',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveLink: 'https://sodabarauf.github.io/pokemon-project/',
-      sourceLink: 'https://github.com/sodabarauf/pokemon-project',
+      liveLink: 'https://sodabarauf.github.io/pokman-project/',
+      sourceLink: 'https://github.com/sodabarauf/pokman-project',
     },
   ];
 
@@ -173,8 +165,8 @@ will interest people.
       <div class="technologies">
         ${project.technologies.map((tech) => `<span>${tech}</span>`).join(' ')}
       </div>
-      <a href="${project.liveLink}" target="_blank" class="btn">Live Version</a>
-      <a href="${project.sourceLink}" target="_blank" class="btn">Source Code</a>
+      <a href="${project.liveLink}" target="_blank" class="btn"><button>Live Version</button></a>
+      <a href="${project.sourceLink}" target="_blank" class="btn"><button>Source Code</button></a>
     `;
     popup.style.display = 'flex';
     console.log('buttonClick');
@@ -202,53 +194,55 @@ will interest people.
   closeCertificateButton.addEventListener('click', toggleCertificatePopup);
   closeCertificateButton.addEventListener('touchstart', toggleCertificatePopup);
 
-  // Form handling
-  const form = document.getElementById('contactForm');
-  const nameField = document.getElementById('name');
-  const emailField = document.getElementById('email');
-  const subjectField = document.getElementById('subject');
-  const messageField = document.getElementById('message');
-  const errorMessage = document.getElementById('errorMessage');
+// Form handling
+const form = document.getElementById('contactForm');
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('email');
+const subjectField = document.getElementById('subject');
+const messageField = document.getElementById('message');
+const errorMessage = document.getElementById('errorMessage');
 
-  // Load data from localStorage
-  const formData = JSON.parse(localStorage.getItem('formData')) || {};
-  if (formData.name) nameField.value = formData.name;
-  if (formData.email) emailField.value = formData.email;
-  if (formData.subject) subjectField.value = formData.subject;
-  if (formData.message) messageField.value = formData.message;
+// Load data from localStorage
+const formData = JSON.parse(localStorage.getItem('formData')) || {};
+if (formData.name) nameField.value = formData.name;
+if (formData.email) emailField.value = formData.email;
+if (formData.subject) subjectField.value = formData.subject;
+if (formData.message) messageField.value = formData.message;
 
-  // Save data to localStorage on input change
-  [nameField, emailField, subjectField, messageField].forEach((field) => {
-    field.addEventListener('input', () => {
-      formData[field.id] = field.value;
-      localStorage.setItem('formData', JSON.stringify(formData));
-    });
+// Save data to localStorage on input change
+[nameField, emailField, subjectField, messageField].forEach((field) => {
+  field.addEventListener('input', () => {
+    formData[field.id] = field.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
   });
+});
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    errorMessage.style.display = 'none';
+// Handle form submission
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent form from redirecting or refreshing the page
+  errorMessage.style.display = 'none'; // Hide any previous error messages
 
-    const name = nameField.value.trim();
-    const email = emailField.value.trim().toLowerCase();
-    const subject = subjectField.value.trim();
-    const message = messageField.value.trim();
+  const name = nameField.value.trim();
+  const email = emailField.value.trim().toLowerCase(); // Ensure email is lowercase for validation
+  const subject = subjectField.value.trim();
+  const message = messageField.value.trim();
 
-    if (!name || !email || !subject || !message) {
-      errorMessage.textContent = 'All fields are required.';
-      errorMessage.style.display = 'block';
-      return;
-    }
+  // Validate that no fields are empty
+  if (!name || !email || !subject || !message) {
+    errorMessage.textContent = 'All fields are required.';
+    errorMessage.style.display = 'block';
+    return;
+  }
 
-    // Validate email
-    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-    if (!emailPattern.test(email)) {
-      errorMessage.textContent = 'Please enter a valid email address.';
-      errorMessage.style.display = 'block';
-      return;
-    }
+  // Validate email format
+  const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  if (!emailPattern.test(email)) {
+    errorMessage.textContent = 'Please enter a valid email address.';
+    errorMessage.style.display = 'block';
+    return;
+  }
 
-    // If validation is OK, submit the form
-    form.submit();
-  });
+  // If all validation passes, submit the form
+  form.submit();
+});
 });
