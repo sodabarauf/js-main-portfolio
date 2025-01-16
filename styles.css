@@ -1,0 +1,1377 @@
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #0f103f;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.hire {
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  margin-left: 30px;
+}
+
+.cv {
+  color: white;
+  background: linear-gradient(281.25deg, #2957a3 31.79%, #c961de 98.74%);
+  border: none;
+  margin-left: 5px;
+}
+
+.round-1 {
+  border-radius: 14.54px 14.54px 14.54px 14.54px;
+  padding: 2px;
+  width: 40%;
+}
+
+.size {
+  width: 20%;
+  height: 70px;
+  left: 100%;
+  margin-left: 200px;
+}
+
+.mr-certificate {
+  margin-left: 150px;
+  margin-bottom: 90px;
+  width: 100px;
+  border: none;
+  padding: 2px;
+}
+
+#hamburger-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: fixed;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 20px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.home {
+  text-align: center;
+  margin-top: 20%;
+  margin-right: 100px;
+}
+
+.txt1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 0px;
+  margin-left: 60px;
+}
+
+.colorw1,
+.colorw {
+  color: white;
+  font-size: larger;
+}
+
+span {
+  font-size: 10px;
+}
+
+.small-circle {
+  width: 95%;
+  padding: 1px;
+  margin-top: 300px;
+  margin-left: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  height: auto;
+}
+
+.overlay-text {
+  margin-top: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(132.61deg, rgba(201, 97, 222, 0.8) 16.04%, rgba(41, 87, 163, 0.8) 84.51%);
+  color: #fff;
+  text-align: justify;
+  height: 70%;
+  width: 90%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.size1 {
+  width: 10%;
+  height: 10%;
+}
+
+.x {
+  color: white;
+  border: none;
+  background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+}
+
+.navbar {
+  color: white;
+  display: block;
+  width: 220px;
+  border-radius: 25% 80% 10% 10%;
+  padding-left: 30px;
+  margin: 10px;
+  list-style-type: none;
+  height: 250px;
+  background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+}
+
+.navbar1 {
+  color: white;
+  display: block;
+  width: 220px;
+  border-radius: 25% 80% 10% 10%;
+  padding: 40px;
+  margin-left: 150px;
+  list-style-type: none;
+  height: 250px;
+  background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+}
+
+.sizenav {
+  width: 25px;
+  height: 20px;
+  margin: 5px;
+}
+
+.colorb {
+  color: rgba(0, 102, 255, 0.5);
+}
+
+.about1 {
+  background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+  border-radius: 50%;
+  border: none;
+  padding: 5%;
+  color: white;
+  margin-left: -100px;
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+.about2 {
+  background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+  border-radius: 50%;
+  border: none;
+  padding: 5%;
+  color: white;
+  margin-left: -50px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.about3 {
+  background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+  border-radius: 50%;
+  border: none;
+  padding: 5%;
+  color: white;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.overlay-text1 {
+  margin-top: 1px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  height: 70%;
+  width: 50%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle {
+  margin-top: 100px;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  bottom: 30%;
+  transform: translate(-60%, -80%);
+  background: radial-gradient(50% 50% at 24.63% 56.9%, #763cac 0%, rgba(50, 15, 133, 0) 100%);
+  border-radius: 50%;
+  padding: 100px;
+}
+
+.sizenav1 {
+  width: 60px;
+  height: 10px;
+}
+
+.work1 {
+  background: radial-gradient(46.25% 45.19% at 50% 50%, #4652c0 0%, #080b3a 100%);
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+.work2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.image-container2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 35px;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text2 {
+  margin-top: 60px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  height: 70%;
+  width: 90%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container1 {
+  position: relative;
+}
+
+.ellipse2 {
+  position: absolute;
+  left: 1px;
+  width: 25%;
+}
+
+.ellipse1 {
+  width: 30%;
+}
+
+.ellpse5 {
+  width: 1042px;
+  height: 330px;
+  top: -51px;
+  margin-left: 14px;
+}
+
+.image3 {
+  position: fixed;
+}
+
+.container3 {
+  display: flex;
+}
+
+.text {
+  font-size: 10px;
+  margin-left: 50px;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.padding1 {
+  margin-top: 80px;
+  margin-left: -160px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+#hide {
+  display: none;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup .popuptext.show {
+  visibility: visible;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.certificate-container {
+  background-color: #301846;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.certificate-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.certificate-card a {
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.popup-content a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-item a {
+  color: #fff; /* or any color that fits your design */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.me a {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.certificate-card a:hover {
+  text-decoration: underline;
+}
+
+/* Close button styles */
+.close-popup-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  margin-left: 100px;
+  padding: 50px 0;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  min-width: 100%; /* Display one card at a time in mobile view */
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+h3,
+h2 {
+  font-size: 20px;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.card .technologies {
+  margin: 10px 0;
+}
+
+.card .technologies span {
+  background-color: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin: 2px;
+}
+
+.card .links {
+  margin: 10px 0;
+}
+
+.card .links a {
+  display: block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.card .links a:hover {
+  text-decoration: underline;
+}
+
+.card button {
+  background: linear-gradient(45deg, #2957a3, #c961de);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.contact-form button {
+  background: linear-gradient(45deg, #2957a3, #c961de);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.slider-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.popup1 {
+  display: none; /* Hide popup initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is on top of other elements */
+}
+
+.popup1.flex {
+  display: flex; /* Show popup when .flex is added */
+}
+
+.popup-content {
+  background: linear-gradient(281.25deg, #2957a3 31.79%, #c961de 98.74%);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 80%; /* Constrain height */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  position: relative; /* Make the contact div the reference point for the absolutely positioned image */
+  border: 1px transparent;
+  margin-top: 400px;
+  background-color: #0f103f;
+}
+
+.top-left-image {
+  position: absolute; /* Position the image absolutely within the contact div */
+  top: -400.63px; /* Adjust this value to position the image outside the div */
+  left: -60px; /* Align the image to the left of the contact div */
+  width: 279px; /* Maintain the specified width */
+  height: 635.63px; /* Maintain the specified height */
+  margin-bottom: 500px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  background-color: #2f328a;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 60px 20px;
+  color: #fff;
+  border-top-left-radius: 100px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info,
+.contact-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-content {
+  width: 100%;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item i {
+  background-color: #3c3c6c;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.contact-form {
+  padding: 20px;
+  width: 100%;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  opacity: 30%;
+}
+
+.contact-form button:hover {
+  background-color: #484891;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: transparent;
+}
+
+.me {
+  border: 1px solid transparent;
+  padding: 1px;
+  margin: 20px;
+  width: 500px;
+  background: linear-gradient(45deg, #2957a3, #6d3478);
+}
+
+.me a i {
+  display: none;
+}
+
+#connect {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 100px;
+}
+
+#connect a {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  height: 50px;
+}
+
+/* screen size 768px */
+@media only screen and (min-width: 768px) {
+  body {
+    margin-bottom: 0;
+  }
+
+  .card .links {
+    display: none; /* Hide links in tablet view and above */
+  }
+
+  .card .technologies,
+  .card button {
+    display: block; /* Show technologies and button in tablet view and above */
+  }
+
+  /* Centering the popup button in laptop version */
+  .card button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .p {
+    display: none;
+  }
+
+  /* Underline active navbar link */
+  .navbar a.active {
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .hide-ellipse-navbar {
+    display: none;
+  }
+
+  .home {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px 30px 30px 30px;
+    margin-left: 90px;
+    background: #2f2f8a;
+    width: 100%;
+    height: 550px;
+    margin-top: 5%;
+  }
+
+  span {
+    font-size: small;
+  }
+
+  .txt {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .txt1 {
+    margin-left: 7%;
+  }
+
+  .size {
+    display: none;
+  }
+
+  .sizenav {
+    display: none;
+  }
+
+  .x {
+    display: none;
+  }
+
+  .nav1 {
+    display: flex;
+  }
+
+  .navbar {
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    background: none;
+    position: fixed;
+    margin-left: 50%;
+  }
+
+  a {
+    padding: 15px;
+  }
+
+  .ellipse4 {
+    position: fixed;
+    left: 1px;
+    width: 20%;
+  }
+
+  .ellipse3 {
+    position: fixed;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .ellpse5 {
+    width: 100%;
+    height: 258.35px;
+    top: -435px;
+    margin-left: 659px;
+  }
+
+  .hire {
+    padding: 10px;
+  }
+
+  .cv {
+    padding: 10px;
+    margin-top: 10%;
+    margin-right: 25%;
+  }
+
+  .round-1 {
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px;
+    width: 20%;
+  }
+
+  .row {
+    background: #2f2f8a;
+    border-radius: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 600px;
+  }
+
+  #abbout {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  img {
+    max-width: 80%;
+    max-height: 70%;
+  }
+
+  .popup {
+    margin-bottom: 600px;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container img {
+    display: block;
+    height: auto;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(132.61deg, rgba(201, 97, 222, 0.8) 16.04%, rgba(41, 87, 163, 0.8) 84.51%);
+    color: #fff;
+    text-align: justify;
+    height: 60%;
+    width: 80%;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .padding1 {
+    margin-top: 80px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+
+  .overlay-text1 {
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 50%;
+    width: 200%;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .image-container2 {
+    margin-top: 150px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .sizenav1 {
+    height: 10px;
+    margin-left: 30%;
+  }
+
+  .colorw1 {
+    font-size: 24px;
+    color: white;
+  }
+
+  #hide {
+    display: inline;
+    margin-top: 1px;
+  }
+
+  .small-circle {
+    width: 100%;
+    padding: 50px;
+    margin-top: 400px;
+  }
+
+  .x1 {
+    display: block;
+    color: white;
+    border: none;
+    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+  }
+
+  .navbar1 {
+    color: white;
+    display: block;
+    width: 220px;
+    border-radius: 25% 80% 10% 10%;
+    padding: 40px;
+    margin-left: 150px;
+    list-style-type: none;
+    height: 250px;
+    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+  }
+
+  .about1 {
+    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+    border-radius: 50%;
+    border: none;
+    padding: 3%;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about2 {
+    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+    border-radius: 50%;
+    border: none;
+    padding: 3%;
+    color: white;
+    margin-left: 100px;
+    font-size: 15px;
+  }
+
+  .about3 {
+    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+    border-radius: 50%;
+    border: none;
+    padding: 3%;
+    color: white;
+    margin-left: 150px;
+    font-size: 15px;
+  }
+
+  .card {
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin-right: 20%;
+  }
+
+  .certificate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .Projects {
+    background: url(./assests/Background.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    margin-top: 100px;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 1450px;
+    left: 150px;
+    width: 80%;
+    height: 835.63px;
+    background-size: 90%; /* Cover the whole div */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.54; /* Adjust opacity as needed */
+  }
+
+  .image1 {
+    background-image: url('assests/Ellipse 1423.png');
+  }
+
+  .image2 {
+    background-image: url('assests/Ellipse 1425.png');
+  }
+
+  .image3 {
+    background-image: url('assests/Ellipse 1427.png');
+  }
+
+  .image4 {
+    background-image: url('assests/Small Circle.png');
+  }
+
+  .slider {
+    margin-left: 200px;
+  }
+
+  .slider-container {
+    width: 50%; /* Adjust for desktop view */
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+
+  .popup-content {
+    max-width: 700px;
+    color: white;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .contact {
+    position: relative; /* Make the contact div the reference point for the absolutely positioned image */
+    border: 1px transparent;
+    margin-top: 100px;
+    padding: 100px;
+  }
+
+  .top-left-image {
+    position: absolute; /* Position the image absolutely within the contact div */
+    top: -160.63px; /* Adjust this value to position the image outside the div */
+    left: 30px; /* Align the image to the left of the contact div */
+    width: 250px; /* Maintain the specified width */
+    height: 635.63px; /* Maintain the specified height */
+    margin-bottom: 500px;
+  }
+
+  .me {
+    display: flex;
+    justify-content: center;
+    width: 500.72px;
+    margin-right: 50px;
+    margin-left: 200px;
+  }
+
+  footer {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .me a {
+    margin-left: 1%;
+    padding: 1px;
+    color: white;
+  }
+}
+
+/* 1440px screen size */
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .home {
+    border-radius: 100px 30px 30px 30px;
+    margin-right: 1px;
+    margin-left: 150px;
+    background: #2f2f8a;
+    width: 100%;
+    height: 600px;
+    margin-top: 2%;
+  }
+
+  .navbar {
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    background: none;
+    position: fixed;
+    margin-left: 60%;
+  }
+
+  .navbar1 {
+    color: white;
+    display: block;
+    width: 220px;
+    border-radius: 25% 80% 10% 10%;
+    padding: 40px;
+    margin-left: 100px;
+    list-style-type: none;
+    height: 250px;
+    background: linear-gradient(180deg, #763cac 0%, #301846 100%);
+  }
+
+  .row {
+    background: #2f2f8a;
+    border-radius: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 50px;
+    height: 600px;
+  }
+
+  .ellipse4 {
+    position: fixed;
+    left: 1px;
+    width: 15%;
+  }
+
+  .ellipse3 {
+    position: fixed;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
+  .ellpse5 {
+    height: 300px;
+  }
+
+  .hire {
+    padding: 10px;
+  }
+
+  .cv {
+    padding: 10px;
+    margin-top: 3%;
+    margin-right: 60%;
+  }
+
+  .round-1 {
+    border-radius: 6px 6px 6px 6px;
+    padding: 6px;
+    width: 13%;
+    height: 10%;
+  }
+
+  .overlay-text {
+    margin-top: 20%;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(132.61deg, rgba(201, 97, 222, 0.8) 16.04%, rgba(41, 87, 163, 0.8) 84.51%);
+    color: #fff;
+    text-align: justify;
+    height: 80%;
+    width: 60%;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .txt1 {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+
+  .padding1 {
+    margin-top: 150px;
+    margin-left: -10px;
+    margin-bottom: -1px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .colorw {
+    font-size: 14px;
+  }
+
+  .colorw1 {
+    font-size: 54px;
+    color: white;
+  }
+
+  .mr-certificate {
+    margin-left: 200px;
+    margin-bottom: 90px;
+    width: 130px;
+    border-radius: 100px;
+    padding: 2px;
+  }
+
+  .about1 {
+    margin-right: 150px;
+    width: 25%;
+    font-size: 20px;
+  }
+
+  .about2 {
+    width: 22%;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+
+  .about3 {
+    width: 18%;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+
+  .overlay-text1 {
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 50%;
+    width: 200%;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .image-container2 {
+    margin-top: 150px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .sizenav1 {
+    height: 30px;
+    margin-left: 30%;
+  }
+
+  .small-circle {
+    width: 100%;
+    padding: 1px;
+    margin-top: 300px;
+  }
+
+  .Projects {
+    height: 800px;
+  }
+
+  .background-image {
+    top: 1550px;
+    left: 150px;
+  }
+
+  .card {
+    background: transparent;
+    display: inline-block;
+    min-width: 60%;
+    height: 100%;
+    border-radius: 10%;
+  }
+
+  .popup-content {
+    max-width: 900px;
+  }
+
+  .contact {
+    position: relative; /* Make the contact div the reference point for the absolutely positioned image */
+    border: 1px transparent;
+    margin-top: 100px;
+    padding: 100px;
+  }
+
+  .container {
+    width: 80%;
+    height: 600px;
+    background-color: #2f328a;
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+
+  .info-content {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .contact-content {
+    margin: 50px;
+  }
+
+  .top-left-image {
+    top: -50.63px;
+    left: 160px;
+  }
+
+  .me {
+    margin-left: 350px;
+    width: 50%;
+    background: linear-gradient(45deg, #2957a3, #6d3478);
+  }
+
+  .me a {
+    padding-right: 50px;
+  }
+}
